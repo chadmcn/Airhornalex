@@ -180,6 +180,16 @@ var BIRTHDAY *SoundCollection = &SoundCollection{
 	},
 }
 
+var AIRHORN *SoundCollection = &SoundCollection{
+	Prefix: "Alex",
+	Commands: []string{
+		"!alex",
+	},
+	Sounds: []*Sound{
+		createSound("alex", 1000, 250),
+	},
+}
+
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	AIRHORN,
 	KHALED,
@@ -187,6 +197,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	ETHAN,
 	COW,
 	BIRTHDAY,
+	ALEX,
 }
 
 // Create a Sound struct
